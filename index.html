@@ -22,8 +22,6 @@
     </section>
     <section ng-show="jokes" class="row">
       <div class="col-xs-6 col-xs-offset-3">
-      	<!--target="_blank"-->
-        <!--a ng-href="http://api.icndb.com/jokes/{{joke.id}}" ng-repeat="joke in jokes track by $index"-->
         <a ng-href="joke.html?id={{joke.id}}" ng-repeat="joke in jokes track by $index">
           <div class="well">
           	ID: {{joke.id}} - Category: {{joke.categories[0]}} 
